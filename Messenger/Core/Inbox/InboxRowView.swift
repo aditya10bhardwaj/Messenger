@@ -37,7 +37,6 @@ struct InboxRowView: View {
             .foregroundStyle(.gray)
         }
         .frame(height: 72)
-        .padding(.horizontal)
     }
 }
 

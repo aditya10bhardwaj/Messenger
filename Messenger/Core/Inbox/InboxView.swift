@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct InboxView: View {
+    
+    @State private var showNewMessagesView: Bool = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 ActiveNowView()
+                
+                List {
+                    ForEach(0 ..< 10, id: \.self) { message in
+                        InboxRowView()
+                    }
+                }
+                .listStyle(PlainListStyle())
+                .frame(height: UIScreen.main.bounds.height - 120)
+            }
+            .fullScreenCover(isPresented: $showNewMessagesView) {
+                NewMessageView()
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
@@ -25,10 +39,15 @@ struct InboxView: View {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    Image(systemName: "square.and.pencil.circle.fill")
-                        .resizable()
-                        .frame(width: 32, height: 32)
-                        .foregroundStyle(.black, Color(.systemGray5))
+                    Button {
+                        showNewMessagesView.toggle()
+                    } label: {
+                        Image(systemName: "square.and.pencil.circle.fill")
+                            .resizable()
+                            .frame(width: 32, height: 32)
+                            .foregroundStyle(.black, Color(.systemGray5))
+                    }
+
                 }
             }
         }
