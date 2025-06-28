@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBQeD6pw5zg9lfxh91l4QDytkhaUKkkt1U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>712655102269</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.demo.MessengerSwiftUI</string>
+	<key>PROJECT_ID</key>
+	<string>messenger-8d97a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>messenger-8d97a.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:712655102269:ios:af74e1806a3179e9f4e554</string>
+</dict>
+</plist>
