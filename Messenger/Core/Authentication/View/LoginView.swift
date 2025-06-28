@@ -22,7 +22,7 @@ struct LoginView: View {
                     .padding()
                 
                 VStack {
-                    TextField("Username", text: $viewModel.email)
+                    TextField("Email", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))

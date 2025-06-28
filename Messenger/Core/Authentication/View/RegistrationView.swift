@@ -30,7 +30,7 @@ struct RegistrationView: View {
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
                     
-                    TextField("Username", text: $viewModel.email)
+                    TextField("Email", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
